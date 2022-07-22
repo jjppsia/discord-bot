@@ -1,6 +1,6 @@
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
-const command = require('./test/commandBuilder');
+const command = require('./commands/commandBuilder');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -10,8 +10,14 @@ for (const com of command) {
   client.commands.set(com?.data?.name, com);
 }
 
-client.once('ready', () => {
-  console.log('Ready!');
+client.once('ready', (c) => {
+  console.log(`Ready! Logged in as ${c.user.tag}`);
+});
+
+client.on('interactionCreate', (interaction) => {
+  console.log(
+    `${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`
+  );
 });
 
 client.on('interactionCreate', async (interaction) => {
