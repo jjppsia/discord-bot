@@ -6,11 +6,13 @@
 `DISCORD_TOKEN=your_token_here` 
 
 2. Create your **config.json** file to set up your **clientId, guildId, token.** <br>
-`{
+```
+{
   "clientId": "your_clientId_here",
   "guildId": ["guildId", "add_another_guildId_you_want"],
   "token": "your_token_here"
-}`
+}
+```
 
 3. Create **data.js** file under the **commands** folder to set up your server slash commands. Just follow the format. <br>
 ```
@@ -31,6 +33,6 @@ const data = [
     reply: 'command_reply',
   },
 ];
-module.exports = data;
 
+module.exports = data;
 ```
