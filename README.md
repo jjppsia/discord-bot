@@ -1,4 +1,4 @@
-# discord-bot
+# a very simple discord bot to integrate on your server
 
 ---
 
