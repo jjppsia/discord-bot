@@ -12,3 +12,26 @@
   "token": "your_token_here"
 }`
 
+3. Create **data.js** file under the **commands** folder to set up your server slash commands. Just follow the format. <br>
+`
+const data = [
+  {
+    commandName: 'hello',
+    description: 'Say hello to the channel.',
+    reply: 'Hello, everyone!.',
+  },
+  {
+    commandName: 'your_command_name_here',
+    description: 'command_description',
+    reply: 'command_reply',
+  },
+  {
+    commandName: 'your_command_name_here',
+    description: 'command_description',
+    reply: 'command_reply',
+  },
+];
+
+module.exports = data;
+
+`
