@@ -30,5 +30,4 @@
     reply: 'command_reply',
   },
 ];
-
 module.exports = data;`
