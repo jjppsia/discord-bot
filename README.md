@@ -1,4 +1,6 @@
 # discord-bot
 
-# You can add your commands in the data.js file under commands folder. Just follow the format.
-# You can also add multiple server/guild ids
+---
+
+1. Create your .env file and include your DISCORD_TOKEN in it
+`code` DISCORD_TOKEN=your_token_here
