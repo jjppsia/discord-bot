@@ -13,7 +13,7 @@
 }`
 
 3. Create **data.js** file under the **commands** folder to set up your server slash commands. Just follow the format. <br>
-`const data = [
+`<br>const data = [
   {
     commandName: 'hello',
     description: 'Say hello to the channel.',
